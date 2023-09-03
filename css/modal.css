@@ -1,0 +1,100 @@
+body.modal-open {
+  overflow: hidden;
+  padding-right: 17px;
+}
+
+@media (max-width: 991px) {
+  body.modal-open {
+    padding-right: 0;
+  }
+}
+
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999999;
+}
+
+.modal-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-close {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-content {
+  overflow: hidden auto;
+  max-height: 90vh;
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  scrollbar-color: #000 #fff;
+  scrollbar-width: thin;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+
+.modal-content-wrap {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 95%;
+  background-color: #ffffff;
+}
